@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css/style.css" />
+    <script src="script/login.js" defer></script>
+    <script src="script/addToBasket.js" defer></script>
+  </head>
+  <body>
+    <div class="headerWrap">
+      <header>
+        <a href="home.html">
+          <img src="images/GameHub_Logo.png" class="logo" alt="Company logo"
+        /></a><div class="cartItems">
+        <a href="checkout.html"
+          ><img
+            src="images/shopping-cart.png"
+            class="icon1"
+            alt="Shopping cart logo"
+        /></a><p id="amountOf">2</p></div>
+        <a href="login.html"
+          ><img src="images/user.png" class="icon2" alt="User image logo"
+        /></a>
+      </header>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="gamesList.html">List</a></li>
+        <li><a href="contatct.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h1>Your account</h1>
+      <div class="loginInfo">
+        <div class="loginIMG">
+          <img src="images/kamil-s-NPP4Z-3dJe8-unsplash.jpg" alt="SNES controller"/>
+        </div>
+        <div class="loginForms">
+          <p>Log in to your profile or create one right away</p>
+          <div class="logOrReg">
+            <p>
+              <span class="logClick">Log in</span> /
+              <span class="regClick">Register</span>
+            </p>
+          </div>
+
+          <div class="loginVer">
+            <form id="formLogin">
+              <formgroup>
+                <label for="usernameLogin">Username</label>
+                <input type="text" id="usernameLogin"/>
+                <p class="error" id="usernameLoginError">Enter username</p>
+              </formgroup>
+              <formgroup>
+                <label for="passwordLogin">Password</label>
+                <input type="password" id="passwordLogin"/>
+                <p class="error" id="passwordLoginError">Enter passowrd(min 5 letters)</p>
+              </formgroup>
+              <button>Log in</button>
+            </form>
+          </div>
+          <div id="loginSuccess">
+            <h3>You've logged in!</h3>
+          </div>
+          <div class="registerVer">
+            <form id="registerForm">
+              <formgroup>
+                <label for="username">Username</label>
+                <input type="text" id="username"/>
+                <p class="error" id="usernameError">please enter username</p>
+              </formgroup>
+              <formgroup>
+                <label for="password1">Password</label>
+                <input type="password" id="password1"/>
+                <p class="error" id="password1Error">Password must be minimum 5 symbols</p>
+              </formgroup>
+              <formgroup>
+                <label for="password2">Confirm Password</label>
+                <input type="password" id="password2"/>
+                <p class="error" id="password2Error">Passwords don't correspond</p>
+              </formgroup>
+              <formgroup>
+                <label for="email">Email</label>
+                <input type="email" id="email"/>
+                <p class="error" id="emailError">Please enter a valid email-adress</p>
+              </formgroup>
+              <button>Register</button>
+            </form>
+          </div>
+          <div id="registerSuccess">
+            <h3>You've created a profile!</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>You can always follow us on our socials</p>
+      <ul>
+        <li><a href="https://www.youtube.com/">YouTube</a></li>
+        <li><a href="https://www.snapchat.com/">Snapchat</a></li>
+        <li><a href="https://www.instagram.com/">Instagram</a></li>
+        <li><a href="https://www.twitter.com/">Twitter</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

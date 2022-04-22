@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List of games</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css/style.css" />
+    <script src="script/buttons.js" defer></script>
+    <script src="script/loops.js" defer></script>
+    <script src="script/gameList.js" defer></script>
+    <script src="script/addToBasket.js" defer></script>
+    <script src="script/index.js" defer></script>
+  </head>
+  <body>
+    <div class="headerWrap">
+      <header>
+        <a href="home.html">
+          <img src="images/GameHub_Logo.png" class="logo" alt="Company logo"
+        /></a><div class="cartItems">
+        <a href="checkout.html"
+          ><img
+            src="images/shopping-cart.png"
+            class="icon1"
+            alt="Shopping cart logo"
+        /></a><p id="amountOf">2</p></div>
+        <a href="login.html"
+          ><img src="images/user.png" class="icon2" alt="User image logo"
+        /></a>
+      </header>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="gamesList.html">List</a></li>
+        <li><a href="contatct.html">Contact</a></li>
+      </ul>
+    </div>
+
+<div class="content">
+    <div class="games">
+        <h1>Find your next <span class="looping" id="feelingLoop">story</span></h1>
+    </div>
+
+
+    <div class="gameNav">
+        <button id="systemsBTN">Systems</button>
+        <button id="generationBTN">Generation</button>
+        <button id="genreBTN">Genre</button>
+        <form>
+            <input id="searchInput" type="search" name="search" placeholder="serach for game by title">
+            <button id="searchBTN">CLICK</button>
+        </form>
+    </div>
+
+    <div class="gameSystems searchable">
+        <ol class="nintendoHomeSystems gameSystem">
+            <h5>Nintendo</h5>
+            <li>NES</li>
+            <li>SNES</li>
+            <li>Nintendo 64</li>
+            <li>GameCube</li>
+            <li>Wii</li>
+            <li>WiiU</li>
+            <li>Switch</li>
+        </ol>
+        
+        <ol class="nintendoHandheld gameSystem">
+            <h5>Nintendo</h5>
+            <li>GameBoy</li>
+            <li>GameBoy Color</li>
+            <li>GameBoy Advance</li>
+            <li>Nintendo DS</li>
+            <li>Nintendo 3DS</li>
+        </ol>
+        <ol class="segaSystems gameSystem">
+            <h5>Sega</h5>
+            <li>Genesis</li>
+            <li>Game Gear</li>
+            <li>Sega CS</li>
+            <li>Sega Saturn</li>
+            <li>Dreamcast</li>
+        </ol>
+        <ol class="sonySystems gameSystem">
+            <h5>Sony</h5>
+            <li>PlayStaion</li>
+            <li>PlayStaion 2</li>
+            <li>PlayStaion 3</li>
+            <li>PlayStaion 4</li>
+            <li>PlayStaion 5</li>
+        </ol>
+        <ol class="microsoftSystems gameSystem">
+            <h5>Xbox</h5>
+            <li>Xbox</li>
+            <li>Xbox 360</li>
+            <li>Xbox One</li>
+            <li>Xbox Series X</li>
+        </ol>
+        <ol clss="pcSystems gameSystem">
+            <li>PC</li>
+        </ol>
+    </div>
+
+    <div class="gameGeneration searchable">
+        <ol>
+            <li>Third</li>
+            <li>Fourth</li>
+            <li>Fifth</li>
+            <li>Sixth</li>
+            <li>Seventh</li>
+            <li>Eigth</li>
+            <li>Nine</li>
+        </ol>
+    </div>
+
+    <div class="genres searchable">
+        <ol>
+            <li>Action</li>
+            <li>Multiplayer</li>
+            <li>Racing</li>
+            <li>FPS</li>
+            <li>Story</li>
+            <li>Fighting</li>
+            <li>Party</li>
+        </ol>
+    </div>
+
+
+    <div class="gameList">
+        <ul class="list">
+        </ul>
+    </div>
+</div>
+<footer>
+    <p>You can always follow us on our socials</p>
+    <ul>
+      <li><a href="https://www.youtube.com/">YouTube</a></li>
+      <li><a href="https://www.snapchat.com/">Snapchat</a></li>
+      <li><a href="https://www.instagram.com/">Instagram</a></li>
+      <li><a href="https://www.twitter.com/">Twitter</a></li>
+    </ul>
+  </footer>
+  
+  </body>
+</html>

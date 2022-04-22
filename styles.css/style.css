@@ -1,0 +1,578 @@
+* {
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 20px;
+}
+a:link, a:visited {
+  color: white;
+  text-decoration: underline;
+}
+body {
+  background: url("../images/background-image.jpg") center center fixed;
+  background-color: black;
+  color: aliceblue;
+  font-family: "roboto";
+  margin: 0;
+}
+
+.content {
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-bottom: 40px;
+  min-height: 100vh;
+}
+
+.looping {
+  font-family: "Palette Mosaic";
+  font-size: 1.4em;
+  text-shadow: 4px 2px 2px #633066;
+}
+
+/* Header */
+
+.headerWrap {
+  background-color: #a73c71;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100px;
+  grid-column: 1/3;
+  display: flex;
+  align-items: center;
+}
+
+.icon1 {
+  width: 30px;
+  grid-column: 2/3;
+  position: relative;
+}
+
+#amountOf{
+  position: absolute;
+  top: -15px;
+  right: 41.2%;
+  font-size: 1.4em;
+  font-family: "Palette Mosaic";
+  text-shadow: 4px 2px 2px #633066;
+  display: block;
+}
+
+.icon2 {
+  width: 30px;
+  grid-column: 3/3;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.nav {
+  background-color: #633066;
+  padding: 10px 0;
+  width: 100%;
+  color: white;
+}
+
+.nav a {
+  color: white;
+  text-decoration: underline;
+}
+
+.nav a:visited {
+  color: white;
+  text-decoration: underline;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70%;
+}
+
+
+
+
+/* Footer*/
+footer {
+  background-color: #a73c71;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+footer p {
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+/* Home */
+
+.hero {
+  text-align: center;
+}
+
+.story {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  top: -70px;
+}
+
+.storyPicture {
+  width: 35%;
+}
+.storyIMG {
+  width: 80%;
+}
+.storyText {
+  width: 45%;
+}
+
+.storyTextTwo {
+  order: 1;
+}
+
+.storyPictureOne {
+  position: relative;
+  top: 130px;
+  right: -70px;
+}
+
+
+.storyPictureTwo {
+  order: 2;
+  position: relative;
+  top: -50px;
+  right: 70px;
+}
+
+.ending {
+  text-align: center;
+}
+
+/*Gamelist*/
+
+.gameNav {
+  text-align: center;
+}
+
+.gameNav form {
+  display: inline;
+}
+
+.gameNav button {
+  background-color: #a73c71;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+.gameNav button:hover{
+  cursor: pointer;
+}
+
+.gameSystems {
+  display: none;
+}
+
+.gameGeneration {
+  display: none;
+}
+
+.genres {
+  display: none;
+}
+
+.searchable ol {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.gameList img {
+  width: 100%;
+}
+
+.price {
+  text-align: center;
+  font-size: 30px;
+}
+
+.gameCard {
+  border: 1px solid black;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+
+.gameList ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.gameCard h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.gameCard img:hover{
+  transform: scale(1.1);
+}
+
+.basketBtnLarge {
+  width: 40%;
+  padding: 10px;
+  border: 5% 2px solid;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.basketBtn {
+  width: 100%;
+  padding: 10px;
+  border: 5% 2px solid;
+}
+
+/*Game Details*/
+.detailsIMG{
+  position: relative;
+}
+.detailsIMG img {
+  width: 100%;
+}
+.curWatching{
+  position: absolute;
+  top: 0;
+  right: 80%;
+  width: 150px;
+  height: 40px;
+  background-color: red;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.curRemaining{
+  position: absolute;
+  top: 90%;
+  right: -60px;
+  width: 150px;
+  height: 40px;
+  background-color: blue;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Contact*/
+
+.contactInfo{
+  text-align: center;
+}
+
+.findUs{
+  text-align: center;
+}
+
+.formgroup{
+  text-align: center;
+  margin-top: 30px;
+}
+
+#formBtnHldr{
+  display: block;
+}
+
+#formBTN{
+  margin-top: 40px;
+  font-size: 1.4em;
+}
+
+#messageText{
+  display: block;
+  width: 500px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+#titleError{
+  display: none;
+}
+
+#messageTextError{
+  display: none;
+}
+
+.contactSucess{
+  text-align: center;
+  display: none;
+}
+/*chekcout*/
+
+.chekcoutItems img {
+  width: 100%;
+}
+
+.removeItem{
+  font-size: 2em;
+  width: 40px;
+  height: 40px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+}
+
+.amount{
+  font-size: 2em;
+  text-align: center;
+}
+
+.confirmBTN {
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.confirmBTN:hover{
+  font-size: 1.5rem;
+}
+
+.confirmBTN a:visited, a:link{
+  color: black;
+}
+
+.removeItem:hover{
+  cursor: pointer;
+}
+
+/*checkout confirmation*/
+
+.confirmation {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.confirmation p{
+  font-size: 1.4em;
+}
+
+.recommendation{
+  text-align: center;
+}
+
+.recommendationList img{
+  width: 100%;
+}
+
+.gameCardRec {
+  border: 1px solid black;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+
+.gameCardRec img:hover{
+  transform: scale(1.1);
+}
+
+/*login*/
+
+.error{
+  color: red;
+}
+
+#usernameError{
+  display: none;
+}
+
+#password1Error{
+  display: none;
+}
+
+#password2Error{
+  display: none;
+}
+
+#emailError{
+  display: none;
+}
+
+#registerSuccess{
+  display: none;
+}
+
+#loginSuccess{
+  display: none;
+}
+
+#usernameLoginError{
+  display: none;
+}
+
+#passwordLoginError{
+  display: none;
+}
+
+.loginInfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 50px;
+}
+
+.loginIMG{
+  width: 75%;
+  display: flex;
+  align-items: center;
+}
+
+.loginIMG img{
+  width: 100%;
+}
+
+.loginForms{
+  width: 49%;
+  text-align: center;
+}
+
+.loginVer{
+  display: none;
+}
+
+.loginVer formgroup label{
+  padding-top: 20px;
+  display: block;
+}
+
+.loginVer button{
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.registerVer{
+  display: block;
+}
+
+.registerVer formgroup label{
+  padding-top: 20px;
+  display: block;
+}
+
+.registerVer button{
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.logClick:hover, .regClick:hover{
+  cursor: pointer;
+}
+
+
+/* Interactivity */
+
+/* MEDIA POINTS*/
+@media (min-width: 768px) {
+  .content {
+    width: 80%;
+  }
+  .nav {
+    display: block;
+    font-size: 1.4rem;
+  }
+  .nav li {
+    display: inline-block;
+  }
+  /*GAMELIST*/
+  .gameList {
+    width: 100%;
+    text-align: center;
+  }
+  .gameCard {
+    width: 49%;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+
+  .gameCardRec{
+    width: 35%;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+
+  .logo {
+    width: 85px;
+  }
+  /*GAME DETAILS*/
+  .gameDetailsContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+  }
+  .detailsIMG {
+    width: 50%;
+  }
+  .information {
+    width: 35%;
+    display: inline-block;
+  }
+  .moreGames {
+    text-align: center;
+    padding-top: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  /*GAMELIST*/
+  .gameCard {
+    width: 30%;
+  }
+  .gameCardRec {
+    width: 19%;
+  }
+}
+
+@media(min-width: 1400px){
+  .gameCard{
+    width: 25%;
+  }
+}

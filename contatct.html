@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css/style.css" />
+    <script src="script/contactValidation.js" defer></script>
+    <script src="script/addToBasket.js" defer></script>
+  </head>
+  <body>
+    <div class="headerWrap">
+      <header>
+        <a href="home.html">
+          <img src="images/GameHub_Logo.png" class="logo" alt="Company logo"
+        /></a><div class="cartItems">
+        <a href="checkout.html"
+          ><img
+            src="images/shopping-cart.png"
+            class="icon1"
+            alt="Shopping cart logo"
+        /></a><p id="amountOf">2</p></div>
+        <a href="login.html"
+          ><img src="images/user.png" class="icon2" alt="User image logo"
+        /></a>
+      </header>
+    </div>
+<div class="nav">
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="gamesList.html">List</a></li>
+    <li><a href="contatct.html">Contact</a></li>
+  </ul>
+</div>
+    <div class="content">
+        <div class="contactInfo">
+            <h1>Contact us</h1>
+            <p>
+              The future of gaming is green, reach out if you have any questions or
+              are wondering about our services
+            </p>
+          </div>
+
+        <div class="findUs">
+            <h2>Where we are</h2>
+            <p>We're a digital distributor and therefore do not have a physical address. <br> You can contact us through our contact form below if there is anything in particular that you need to speak to us about</p>
+        </div>
+
+
+
+
+      <div class="formgroup">
+        <form class="contactForm">
+          <formgroup>
+            <p class="error" id="titleError">Please enter a title</p>
+            <label for="message">Title</label>
+            <input type="text" id="message" />
+          </formgroup>
+          <formgroup>
+            <p class="error" id="emailError">please enter a valid email</p>
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" />
+          </formgroup>
+          <formgroup>
+            <textarea id="messageText"> </textarea>
+            <label for="messageText">Message</label>
+            <p class="error" id="messageTextError">We'll need a more detailed email</p>
+          </formgroup>
+          <formgroup id="formBtnHldr">
+            <input type="submit" id="formBTN" />
+          </formgroup>
+        </form>
+      </div>
+    <div class="contactSucess">
+      <h3>Thank you for the message!</h3>
+      <p>We'll be in contact with you as soon as we're able!</p>
+    </div>
+  </div>
+
+
+    <footer>
+      <p>You can always follow us on our socials</p>
+      <ul>
+        <li><a href="https://www.youtube.com/">YouTube</a></li>
+        <li><a href="https://www.snapchat.com/">Snapchat</a></li>
+        <li><a href="https://www.instagram.com/">Instagram</a></li>
+        <li><a href="https://www.twitter.com/">Twitter</a></li>
+      </ul>
+    </footer>
+    
+  </body>
+</html>
